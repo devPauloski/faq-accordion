@@ -128,8 +128,6 @@ details summary {
   &::after {
     content: url("/assets/images/icon-plus.svg");
     border-radius: 50%;
-    display: inline-grid;
-    place-content: center;
     position: absolute;
     right: 0;
     top: 50%;
