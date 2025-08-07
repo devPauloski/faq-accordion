@@ -137,3 +137,7 @@ details summary {
     content: url("/assets/images/icon-minus.svg");
   }
 }
+
+details summary::-webkit-details-marker {
+  display: none;
+}
