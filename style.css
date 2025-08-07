@@ -31,7 +31,7 @@
   --font-weight-bold: 700;
 }
 
-/* General Styling */
+/* Styles */
 *,
 *::before,
 *::after {
@@ -57,5 +57,24 @@ body {
   font-weight: var(--font-weight-normal);
   line-height: 1.5;
   min-block-size: 100vh;
+  background-color: var(--color-purple-100);
+  background-image: url("/assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media(min-width: 48em) {
+    background-size: auto;
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+  }
 }
 
+.wrapper {
+  max-inline-size: 30rem;
+  inline-size: 90%;
+  margin-inline: auto;
+  background-color: white;
+  margin-block: 8.75rem;
+  @media(min-width: 48em) {
+    max-inline-size: 37.5rem;
+    margin-block: 10.25rem;
+  }
+}
