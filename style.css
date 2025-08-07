@@ -82,7 +82,7 @@ body {
 section {
   padding-inline: 1.25rem;
   padding-block: 1.5rem 1rem;
-  border-radius: .75rem;
+  border-radius: 1rem;
   background-color: var(--color-white);
   @media(min-width: 48em) {
     padding-inline: 2.5rem;
