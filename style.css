@@ -62,7 +62,7 @@ body {
   background-image: url("/assets/images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  @media(min-width: 48em) {
+  @media (min-width: 48em) {
     background-size: auto;
     background-image: url("/assets/images/background-pattern-desktop.svg");
   }
@@ -73,7 +73,7 @@ body {
   inline-size: 90%;
   margin-inline: auto;
   margin-block: 8.75rem;
-  @media(min-width: 48em) {
+  @media (min-width: 48em) {
     max-inline-size: 37.5rem;
     margin-block: 10.25rem;
   }
@@ -81,10 +81,10 @@ body {
 
 section {
   padding-inline: 1.25rem;
-  padding-block: 1.5rem 1rem;
+  padding-block-start: 1.5rem;
   border-radius: 1rem;
   background-color: var(--color-white);
-  @media(min-width: 48em) {
+  @media (min-width: 48em) {
     padding-inline: 2.5rem;
     padding-block-start: 2.5rem;
   }
@@ -101,21 +101,19 @@ h1 {
   font-weight: var(--font-weight-bold);
   color: var(--color-purple-950);
   line-height: 1.25;
-  @media(min-width: 48em) {
+  @media (min-width: 48em) {
     font-size: 3.5rem;
   }
 }
 
 details {
   border-block: 1px solid var(--color-purple-100);
-}
-
-details:first-of-type {
-  border-block-start: 0;
-}
-
-details:last-of-type {
-  border-block-end: 0;
+  &:first-of-type {
+    border-block-start: 0;
+  }
+  &:last-of-type {
+    border-block-end: 0;
+  }
 }
 
 details summary {
@@ -125,7 +123,7 @@ details summary {
   cursor: pointer;
   position: relative;
   padding-inline-end: 4ch;
-  @media(min-width: 48em) {
+  @media (min-width: 48em) {
     padding-block: 1.75rem;
   }
   &::after {
@@ -152,7 +150,3 @@ summary + p {
   color: var(--color-purple-600);
   padding-block-end: 1.25rem;
 }
-
-
-
-
