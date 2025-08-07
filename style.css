@@ -115,10 +115,10 @@ details:last-of-type {
 }
 
 details summary {
+  list-style: none;
   font-weight: var(--font-weight-semibold);
   padding-block: 1.25rem;
   cursor: pointer;
-  list-style: none;
   position: relative;
   padding-inline-end: 4ch;
   @media(min-width: 48em) {
