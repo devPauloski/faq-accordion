@@ -79,10 +79,10 @@ body {
 }
 
 section {
-  padding: 1.25rem;
+  padding-inline: 1.25rem;
   padding-block-start: 1.5rem;
   border-radius: .5rem;
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .header {
@@ -112,12 +112,30 @@ details:last-of-type {
 
 details summary {
   font-weight: var(--font-weight-semibold);
-  padding-block: 1.125rem;
+  padding-block: 1.25rem;
   cursor: pointer;
 }
 
 summary + p {
   color: var(--color-purple-600);
-  margin-block-end: 1.125rem;
+  padding-block-end: 1.25rem;
 }
 
+details summary {
+  list-style: none;
+  position: relative;
+  padding-inline-end: 4ch;
+  &::after {
+    content: url("/assets/images/icon-plus.svg");
+    border-radius: 50%;
+    display: inline-grid;
+    place-content: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  [open] &::after {
+    content: url("/assets/images/icon-minus.svg");
+  }
+}
