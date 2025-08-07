@@ -71,10 +71,51 @@ body {
   max-inline-size: 30rem;
   inline-size: 90%;
   margin-inline: auto;
-  background-color: white;
   margin-block: 8.75rem;
   @media(min-width: 48em) {
     max-inline-size: 37.5rem;
     margin-block: 10.25rem;
   }
+}
+
+section {
+  padding: 1.25rem;
+  padding-block-start: 1.5rem;
+  border-radius: .5rem;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.375rem;
+  margin-block-end: 1.25rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-purple-950);
+  line-height: 1.25;
+}
+
+details:first-of-type {
+  padding-block-start: 0;
+  padding-block-end: 1.125rem;
+  border-block-start: 0;
+}
+
+details {
+  padding-block: 1.125rem;
+  border-block: 1px solid;
+}
+
+details:last-of-type {
+  padding-block-end: 0;
+  border-block-end: 0;
+}
+
+summary {
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
 }
