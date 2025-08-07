@@ -97,6 +97,9 @@ h1 {
   font-weight: var(--font-weight-bold);
   color: var(--color-purple-950);
   line-height: 1.25;
+  @media(min-width: 48em) {
+    font-size: 3.5rem;
+  }
 }
 
 details {
@@ -118,6 +121,9 @@ details summary {
   list-style: none;
   position: relative;
   padding-inline-end: 4ch;
+  @media(min-width: 48em) {
+    padding-block: 1.75rem;
+  }
   &::after {
     content: url("/assets/images/icon-plus.svg");
     border-radius: 50%;
