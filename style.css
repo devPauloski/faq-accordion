@@ -19,6 +19,7 @@
   --color-white: hsl(0, 100%, 100%);
   --color-purple-100: hsl(275, 100%, 97%);
   --color-purple-600: hsl(292, 16%, 49%);
+  --color-purple-700: hsl(282, 57%, 49%);
   --color-purple-950: hsl(292, 42%, 14%);
 
   /* Typography */
@@ -114,14 +115,6 @@ details summary {
   font-weight: var(--font-weight-semibold);
   padding-block: 1.25rem;
   cursor: pointer;
-}
-
-summary + p {
-  color: var(--color-purple-600);
-  padding-block-end: 1.25rem;
-}
-
-details summary {
   list-style: none;
   position: relative;
   padding-inline-end: 4ch;
@@ -136,8 +129,20 @@ details summary {
   [open] &::after {
     content: url("/assets/images/icon-minus.svg");
   }
+  &:hover {
+    color: var(--color-purple-700);
+  }
 }
 
 details summary::-webkit-details-marker {
   display: none;
 }
+
+summary + p {
+  color: var(--color-purple-600);
+  padding-block-end: 1.25rem;
+}
+
+
+
+
